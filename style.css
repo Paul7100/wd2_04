@@ -27,3 +27,21 @@
 
 .acc {text-decoration: none;
     }
+
+
+.search {
+    top: 50px;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kos {background-color: white;
+}
+
+@media (min-width: 768px) {
+    .search {
+        top: 10px;
+        left: -180px;
+    }
+}
