@@ -21,9 +21,31 @@
             max-width: 100px;
             max-height: 250px;}
 
+            .ad img {
+                max-width: 65px;
+                max-height: 130px;
+            justify-content: flex-start;}
+
+            .kosik-image {
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            
+.kosikpopis {float: center;
+    margin-top: 45px;}
+
+
+    .kosikcena {float: center;
+        margin-top: 15px;}
+
+
+
 .abc {background-color: #6290C8}
 
-.cena {background-color: #1D3461}
+.cena {background-color: #1D3461;
+color: white;}
 
 .acc {text-decoration: none;
     }
@@ -37,6 +59,115 @@
 }
 
 .kos {background-color: white;
+}
+
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.step {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.sk {color: #4caf50;}
+
+.step.active {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.step2.active {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block; 
+    background-color: #4caf50;
+    color: #fff;
+    width: 125%;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+}
+
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.finalnicena {color: #4caf50;}
+
+.continue {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.step2 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block; 
+}
+
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
 }
 
 @media (min-width: 768px) {
