@@ -22,8 +22,8 @@
             max-height: 250px;}
 
             .ad img {
-                max-width: 65px;
-                max-height: 130px;
+                max-width: 40px;
+                max-height: 110px;
             justify-content: flex-start;}
 
             .kosik-image {
@@ -135,13 +135,7 @@ button {
     justify-content: flex-end;
 }
 
-.step2 {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    display: inline-block; 
-}
+
 
 .counter {
     width: 150px;
