@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Platba a Doprava</title>
+    <title>Doprava a Platba</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
 
@@ -53,7 +53,7 @@
       <div class="container">
       <div class="progress-container text-center">
         <div class="step"><a href="kosik.html" class="aa">Košík</a></div>
-        <div class="step active"><a href="platba+doprava.html" class="aa">Platba a Doprava</a></div>
+        <div class="step active"><a href="platba+doprava.html" class="aa">Doprava a Platba</a></div>
         <div class="step"><a href="du.html" class="aa">Dodací údaje</a></div>
         <div class="step"><a href="shrnuti.html" class="aa">Shrnutí</a></div>
     </div>
@@ -67,89 +67,115 @@
 
 
 
-    <section class="">
-      <div class=" abc container">
-        <div class="row">
-          <div class="col">
-            <div class="p-4">
+    <section>
+      <div class=" abc container col-md-8">
+            <div class="p-3">
               <div class="row">
 
-                <div class="kos col text-center py-3">
-                  <a class="ad" href="./img/Scarlet.jpg" data-fancybox="gallery">
-                      <img src="./img/Scarlet.jpg" class="kosik-image" />
-                  </a>
-                  <h2 class="kosikpopis">Pokémon Scarlet</h2>
-              </div>
-              
-              <div class="cena col text-center py-4">
+<p class="pd fs-1 text-center">Doprava</p>
 
+                <div class="kos py-3">
 
-                <h5 class="sk text-center">Skladem</h5>
+                    <div class="deliveryBaseContainer">
+                        <div class="deliveryCheckboxContainer">
+                            <input class="deliveryCheckbox" type="checkbox">
+                            <label class="checkbox"></label>
+                        </div>
 
-                <div class="counter">
-                  <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                  <input type="text" value="1">
-                  <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        <i class="bi bi-shop fs-3 text-dark px-2"></i>
+                            <div class="deliveryLabel">
+                                <p class="fs-4">Prodejna</p>
+                            </div>
+                            
+                        </div>
+                        <div class="deliveryPriceContainer">
+                            <span class="deliveryPrice">zdarma</span>
+                        </div>
+                    </div>
                 </div>
-                
 
-                  <h1 class="kosikcena">1 149 Kč</h1>
-              </div>
-
-
-            </div>
 
             <div class="row py-4">
 
-              <div class="kos col text-center py-3">
-                <a class="ad" href="./img/Violet.jpg" data-fancybox="gallery">
-                    <img src="./img/Violet.jpg" class="kosik-image" />
-                </a>
-                <h2 class="kosikpopis">Pokémon Violet</h2>
-            </div>
-            
-            <div class="cena col text-center py-4">
-              <h5 class="sk">Skladem</h5>
+              <div class="kos py-3">
 
-              <div class="counter">
-                <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                <input type="text" value="1">
-                <span class="up"  onClick='increaseCount(event, this)'>+</span>
-              </div>
-
-                <h1 class="kosikcena">1 069 Kč</h1>
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="kos col text-center py-3">
-              <a class="ad" href="./img/Sword.jpg" data-fancybox="gallery">
-                  <img src="./img/Sword.jpg" class="kosik-image" />
-              </a>
-              <h2 class="kosikpopis">Pokémon Sword</h2>
-          </div>
-          
-          <div class="cena col text-center py-4">
-            <h5 class="sk">Skladem</h5>
-
-            <div class="counter">
-              <span class="down" onClick='decreaseCount(event, this)'>-</span>
-              <input type="text" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                <div class="deliveryBaseContainer">
+                    <div class="deliveryCheckboxContainer">
+                        <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                        <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+                    </div>
+                    <div class="deliveryIconContainer">
+                        
+                    </div>
+                    <i class="bi bi-box-seam fs-3 text-dark px-2"></i>
+                        <div class="deliveryLabel">
+                            <p class="fs-4">Zásilkovna</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deliveryPriceContainer">
+                        <span class="deliveryPrice">59 Kč</span>
+                    </div>
+                </div>
             </div>
 
-              <h1 class="kosikcena">1 099 Kč</h1>
-          </div>
 
+
+
+
+        <div class="row">
+
+          <div class="kos py-3">
+
+            <div class="deliveryBaseContainer">
+                <div class="deliveryCheckboxContainer">
+                    <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                    <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+                </div>
+                <div class="deliveryIconContainer">
+                    
+                </div>
+                <i class="bi bi-envelope fs-3 text-dark px-2"></i>
+                    <div class="deliveryLabel">
+                        <p class="fs-4">Česká Pošta</p>
+                    </div>
+                    
+                </div>
+                <div class="deliveryPriceContainer">
+                    <span class="deliveryPrice">59 Kč</span>
+                </div>
+            </div>
         </div>
 
 
 
-          </div>
+    <div class="row py-4">
+
+      <div class="kos py-3">
+
+        <div class="deliveryBaseContainer">
+            <div class="deliveryCheckboxContainer">
+                <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+            </div>
+            <div class="deliveryIconContainer">
+                
+            </div>
+            <i class="bi bi-truck fs-3 text-dark px-2"></i>
+                <div class="deliveryLabel">
+                    <p class="fs-4">Doručení na adresu</p>
+                </div>
+                
+            </div>
+            <div class="deliveryPriceContainer">
+                <span class="deliveryPrice">99 Kč</span>
+            </div>
+        </div>
+    </div>
+
 
         </div>
+
       </div>
 
     </div>
@@ -157,41 +183,125 @@
 </section>
 
 
-    <section class="py-4">
-      <div class=" abc container">
-        <div class="row">
-          <div class="col">
-            <div class="p-3">
-              <div class="row">
-  
-                <div class="col text-center py-5 align-items-center">
-                  <div class="col text-center">
-                    <label for="formGroupExampleInput" class="form-label"><h4>Slevový kupón</h4></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Zadejte kód">
-                  </div>
+<section class="py-4">
+  <div class=" abc container col-md-8">
+        <div class="p-3">
+          <div class="row">
+
+<p class="pd fs-1 text-center">Platba</p>
+
+            <div class="kos py-3">
+
+                <div class="deliveryBaseContainer">
+                    <div class="deliveryCheckboxContainer">
+                        <input class="deliveryCheckbox" type="checkbox">
+                        <label class="checkbox"></label>
+                    </div>
+
+                    <i class="bi bi-google fs-3 text-dark px-2"></i>
+                        <div class="deliveryLabel">
+                            <p class="fs-4">Google Pay</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deliveryPriceContainer">
+                        <span class="deliveryPrice">zdarma</span>
+                    </div>
                 </div>
-                <div class="col text-center py-3">
-                  
-<h3>Celková cena bez DPH</h3>
-<h4 class="py-2">2 620,40 Kč</h4>
-
-<div class="cena"></div>
-<h1>Celková cena s DPH</h1>
-<h2 class="finalnicena cena py-2">3 170,70 Kč</h2>
-                </div>
-
-              </div>
-
             </div>
-          </div>
 
+
+        <div class="row py-4">
+
+          <div class="kos py-3">
+
+            <div class="deliveryBaseContainer">
+                <div class="deliveryCheckboxContainer">
+                    <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                    <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+                </div>
+                <div class="deliveryIconContainer">
+                    
+                </div>
+                <i class="bi bi-credit-card fs-3 text-dark px-2"></i>
+                    <div class="deliveryLabel">
+                        <p class="fs-4">Kartou online</p>
+                    </div>
+                    
+                </div>
+                <div class="deliveryPriceContainer">
+                    <span class="deliveryPrice">zdarma</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
 
 
-    <section class="mb-4">
-      <div class="container text-center continue">
+
+
+
+    <div class="row">
+
+      <div class="kos py-3">
+
+        <div class="deliveryBaseContainer">
+            <div class="deliveryCheckboxContainer">
+                <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+            </div>
+            <div class="deliveryIconContainer">
+                
+            </div>
+            <i class="bi bi-bank fs-3 text-dark px-2"></i>
+                <div class="deliveryLabel">
+                    <p class="fs-4">Bankovním převodem - proforma</p>
+                </div>
+                
+            </div>
+            <div class="deliveryPriceContainer">
+                <span class="deliveryPrice">zdarma</span>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="row py-4">
+
+  <div class="kos py-3">
+
+    <div class="deliveryBaseContainer">
+        <div class="deliveryCheckboxContainer">
+            <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+            <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+        </div>
+        <div class="deliveryIconContainer">
+            
+        </div>
+        <i class="bi bi-cash fs-3 text-dark px-2"></i>
+            <div class="deliveryLabel">
+                <p class="fs-4">Hotově při vyzvednutí</p>
+            </div>
+            
+        </div>
+        <div class="deliveryPriceContainer">
+            <span class="deliveryPrice">zdarma</span>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+</div>
+</section>
+
+
+
+    <section class="mb-4 p-1 py-3">
+      <div class="container text-center continue col-md-8">
           <div class="step2 active">
               <a href="du.html" class="aa">Pokračovat v objednávce</a>
           </div>

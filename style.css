@@ -28,17 +28,19 @@
 
             .kosik-image {
                 float: left;
-                margin-left: 20px;
-                margin-top: 20px;
+                margin-left: 5px;
+                margin-top: 10px;
             }
 
             
 .kosikpopis {float: center;
-    margin-top: 45px;}
+    margin-top: 15px;
+    font-weight: bold}
 
 
     .kosikcena {float: center;
-        margin-top: 15px;}
+        margin-top: 15px;
+        font-weight: bold}
 
 
 
@@ -60,6 +62,8 @@ color: white;}
 
 .kos {background-color: white;
 }
+
+.pd {font-weight: bold}
 
 
 .progress-container {
@@ -117,7 +121,7 @@ color: white;}
 }
 
 input[type="number"] {
-    width: 50px;
+    width: 20px;
     text-align: center;
     margin: 0 10px;
 }
@@ -128,7 +132,7 @@ button {
     font-size: 12px;
 }
 
-.finalnicena {color: #4caf50;}
+.finalnicena {color: #4caf50; font-weight: bold}
 
 .continue {
     display: flex;
@@ -138,14 +142,14 @@ button {
 
 
 .counter {
-    width: 150px;
+    width: 25px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .counter input {
-    width: 50px;
+    width: 30px;
     border: 0;
     line-height: 30px;
     font-size: 20px;
@@ -163,6 +167,31 @@ button {
     color: white;
     user-select: none;
 }
+
+
+.deliveryBaseContainer {
+    display: flex;
+    margin-top: 5px;
+}
+
+.deliveryCheckboxContainer {
+    margin-right: 10px;
+    margin-top: 8px;
+    size: 20px;
+}
+
+.deliveryLabel {
+    font-weight: bold;
+    color: #333;
+    margin-left: 15px;
+}
+
+.deliveryPriceContainer {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
 
 @media (min-width: 768px) {
     .search {

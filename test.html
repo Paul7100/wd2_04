@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Shop</title>
+    
+    <style>
+
+        .topContainer {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .deliveryBaseContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .deliveryCheckboxContainer {
+            margin-right: 10px;
+        }
+
+        .deliveryLabel {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .deliveryPriceContainer {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .deliveryAvailabilityContainer {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4CAF50;
+        }
+    </style>
+
+    <!-- Add your other CSS styles here -->
+
+</head>
+<body>
+
+    <div class="topContainer">
+        <div class="deliveryBaseContainer">
+            <div class="deliveryCheckboxContainer">
+                <input class="deliveryCheckbox hiddenAlzaCheckbox" id="deliveryCheckbox--12" data-deliveryid="-12" type="checkbox">
+                <label for="deliveryCheckbox--12" class="alzacheckbox classic"></label>
+            </div>
+            <div class="deliveryIconContainer">
+                <img loading="lazy" class="delivery-item-icon" src="https://image.alza.cz/Foto/Domains/Logistics/PersonalPickup/svg/icon-2.svg" alt="">
+            </div>
+            <div class="deliveryInfoContainer">
+                <div class="deliveryLabel">
+                    AlzaBox - samoobslužné výdejní boxy
+                </div>
+            </div>
+            <div class="deliveryFlagsContainer">
+            </div>
+        </div>
+        <div class="deliveryPriceContainer free">
+            <span class="deliveryPrice">zdarma</span>
+        </div>
+        <div class="deliveryAvailabilityContainer">
+            <span class="deliveryAvailability">zítra do 8:00</span>
+        </div>
+    </div>
+
+</body>
+</html>
+
